@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=SivKM48-Tt0&ab_channel=Stractors
+https://www.youtube.com/watch?v=V2FqHyMJd3E&list=PLFKB8gx5XrxxvTXkgFLdp6dwrFHIsPR4U&index=2&ab_channel=Stractors
+
+https://github.com/CryptoOutcasts/Whitelist_API
+https://github.com/CryptoOutcasts/Candy_Machine_Whitelist_Site
+https://github.com/exiled-apes/candy-machine-mint/blob/main/src/Home.tsx
+https://github.com/metaplex-foundation/metaplex
+https://github.com/metaplex-foundation/metaplex/tree/master/js/packages/cli
+
+
+
+upload:
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -cp config.json Assets
+
+
+create:
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts create_candy_machine -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -p 0.90
+
+verify:
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json
