@@ -9,12 +9,77 @@ https://github.com/metaplex-foundation/metaplex/tree/master/js/packages/cli
 
 
 
+create new keygen startsWith:
+solana-keygen grind --starts-with CM:1
+
+
+check version:
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version
+
+
+
 upload:
-ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -cp config.json Assets
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -k ../wallet/CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96.json -cp config.json Assets
 
 
 create:
-ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts create_candy_machine -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -p 0.90
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts create_candy_machine -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -p 0.90
 
 verify:
-ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -k ../wallet/CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96.json
+
+
+update:
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts update_candy_machine -k ../wallet/CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96.json -cp config.json Assets
+
+
+
+
+
+
+
+
+white list configuration:
+
+    "whitelistMintSettings": {
+        "mode" : { "neverBurn": true },
+        "mint" : "So11111111111111111111111111111111111111112",
+        "presale" : false,
+        "discountPrice" : null
+    },
+
+
+
+
+
+
+
+
+
+wallet public key: CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96
+Using cluster devnet
+WARNING: The "arweave" storage option will be going away soon. Please migrate to arweave-bundle or arweave-sol for mainnet.
+
+Beginning the upload for 3 (img+json) pairs
+started at: 1655903878565
+initializing candy machine
+Candy machine address:  2ocxydUmMj1r2HWU18GYhreKMrpyhpDqUz1xm348RPvh
+Collection metadata address:  GL48Ejx6WQ2XijkvWXnUak5rQLVoQEJqV4E8JpRNGY49
+Collection metadata authority:  CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96
+Collection master edition address:  FXEQ6LGETGSiKehKDBUpmDaXrTeHQ7xYp6gYFXReTJfC
+Collection mint address:  GGfSXyxud5Di1KCi9khtDiy56FSmKAMqjTrQVXCUZY9L
+Collection PDA address:  EujtyVXKeJJFCsAzqYG2NgAEy1Vy4j6ktFELYBo55scf
+Collection authority record address:  5aFw8Bxw5KFGzvc32RVuvF3CZtppDpkvCWejc2A8DwP6
+Collection:  {
+  collectionMetadata: 'GL48Ejx6WQ2XijkvWXnUak5rQLVoQEJqV4E8JpRNGY49',
+  collectionPDA: 'EujtyVXKeJJFCsAzqYG2NgAEy1Vy4j6ktFELYBo55scf',
+  txId: '3McaBJvFNHd6GKj8NpKwXYjqPbNpfSWFU5GQacyZU53uo9vsvCBbM4Ju7LMsFVWqDK5vcg6riiaSQhVGpkhWQwfn'
+}
+initialized config for a candy machine with publickey: 2ocxydUmMj1r2HWU18GYhreKMrpyhpDqUz1xm348RPvh
+[0] out of [3] items have been uploaded
+Starting upload for [3] items, format {"mediaExt":".png","index":"0"}
+Progress: [████████████████████████████████████████] 100% | 3/3
+Writing all indices in 1 transactions...
+Progress: [████████████████████████████████████████] 100% | 1/1
+Done. Successful = true.
+ended at: 2022-06-22T13:18:40.332Z. time taken: 00:00:41
