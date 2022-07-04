@@ -1,0 +1,32 @@
+{
+  "program": {
+    "uuid": "E7eXH9",
+    "candyMachine": "E7eXH9EXxo5vsf7Z58rsF6kyobB4rW1pZz7gz6p5iDA5",
+    "collection": "4pUxT3Cx1AzCGdYD9jCU4yvmYh8w6DgfvqPWVbcHYQtg"
+  },
+  "items": {
+    "0": {
+      "link": "https://arweave.net/LcVJesZLh6OnN3PMKiACyhxtv2LXybSjpZYvo1J2s5o",
+      "imageLink": "https://arweave.net/u9xxA3s-YECk0WEktQk9tKo2LaF8na8Gi-buCGcdZ2I?ext=png",
+      "name": "Name of 0",
+      "onChain": true,
+      "verifyRun": false
+    },
+    "1": {
+      "link": "https://arweave.net/DfuFS9oiQcvl8_zYTfBJU3soqmhJG3uuVAmocREB6f8",
+      "imageLink": "https://arweave.net/jx1c0EGQ1jkhyNI2g1DRHMOTG8sOwveON95V_3Dc8eQ?ext=png",
+      "name": "Name of 1",
+      "onChain": true,
+      "verifyRun": false
+    },
+    "2": {
+      "link": "https://arweave.net/zuftM53jLyMjFEEkN6CO5qCzLx1ctpbxzPQNtpljgo4",
+      "imageLink": "https://arweave.net/xq5dcuCqC6zOQ7fbojo-UYGmIOpJ2ISnJTFzvQhYUNU?ext=png",
+      "name": "Name of 2",
+      "onChain": true,
+      "verifyRun": false
+    }
+  },
+  "env": "devnet",
+  "cacheName": "temp"
+}

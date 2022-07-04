@@ -1,9 +1,9 @@
 {
-    "name": "Name of 0",
+    "name": "Name of 2",
     "symbol": "My-NFT",
     "description": "Collection of - numbers on the blockchain. This is the number -/-.",
     "seller_fee_basis_points": 500,
-    "image": "0.png",
+    "image": "2.png",
     "attributes": [
         { "trait_type": "Layer-1", "value": "0" },
         { "trait_type": "Layer-2", "value": "0" },
@@ -13,13 +13,13 @@
     "properties": {
         "files": [
             {
-                "uri": "0.png",
+                "uri": "2.png",
                 "type": "image/png"
             }
         ],
         "creators": [
             {
-                "address": "SA2mh4WJcXafcPc1TdPwxHKSzSkwgUwXCGHFvChiqPv",
+                "address": "sa6hLpjaHA7TiArUgVKD3ZyvmD6cWdDsTY8N8YvoNJx",
                 "share": 100
             }
         ]

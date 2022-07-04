@@ -7,6 +7,21 @@ https://github.com/exiled-apes/candy-machine-mint/blob/main/src/Home.tsx
 https://github.com/metaplex-foundation/metaplex
 https://github.com/metaplex-foundation/metaplex/tree/master/js/packages/cli
 
+https://github.com/exiled-apes/candy-machine-mint 
+https://github.com/tonyboylehub/candymachine-v2-boiler-mint-site-noFLP 
+https://github.com/Fulgurus/candy-machine-v2-with-marketplace 
+https://github.com/Fulgurus/candy-machine-v2-responsive-ui 
+
+
+
+*: candy-machine => Assets directory for image and metadata, and config.json for candymachine configuration
+*: candy-machine-v2-responsive-ui => responsive ui for minting
+*: candy-machine-whitelist-site => whitelist repo for whitelisting 
+*: candymachine-v2-boiler-mint-site-noFLP => candymachine minting repo for simple minting
+*: cmv2-marketplace => candy shop frontend repo
+*: wallet => all wallet jsons files
+*: whitelist-api => whitelist repo for create whitelist csv file api
+
 
 
 create new keygen startsWith:
@@ -20,13 +35,16 @@ ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version
 
 upload:
 ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -k ../wallet/CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96.json -cp config.json Assets
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -k ../wallet/sa6hLpjaHA7TiArUgVKD3ZyvmD6cWdDsTY8N8YvoNJx.json -cp config.json Assets
 
 
 create:
 ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts create_candy_machine -k ../wallet/sa8Ur62SfgowG5mMDGeYNXZvkawrCcFdfsNeXPbfBEB.json -p 0.90
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts create_candy_machine -k ../wallet/CM2EKFV4zkQbceu6K9k93vF5M3TduVcnyRfwRcMp2EHM.json -p 0.90
 
 verify:
 ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -k ../wallet/CMc85VTxVFtcgU6mA5pwcD4tXJcEXDbcRfupBuBVta96.json
+ts-node ~/solana/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -k ../wallet/sa6hLpjaHA7TiArUgVKD3ZyvmD6cWdDsTY8N8YvoNJx.json
 
 
 update:
